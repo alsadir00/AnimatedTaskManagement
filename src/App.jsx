@@ -16,12 +16,13 @@ import Projects from './Pages/Projects'
 import ProjectsD from './Pages/ProjectD'
 import TaskD from './Pages/TaskD'
 import TaskM from './Pages/TaskM';
+import Footer from './Components/Footer';
 
 
 const App = () => {
   return (
     <ThemeProvider>
-      <div className='h-screen w-screen dark:bg-gradient-to-tr dark:from-gray-700 dark:via-gray-600 dark:text-pink-200 dark:to-gray-800 bg-gradient-to-r from-violet-100 via-pink-200 to-orange-100'>
+      <div className='h-full w-[100vw] dark:bg-gradient-to-tr dark:from-gray-700 dark:via-gray-600 dark:text-pink-200 dark:to-gray-800 bg-gradient-to-r from-violet-100 via-pink-200 to-orange-100'>
         <Router>
           <ToastContainer
             position="top-center"
@@ -35,7 +36,7 @@ const App = () => {
             pauseOnHover={false}
             theme="light"
           />
-          <div className='w-screen h-18'>
+          <div className='w-screen h-[10vh]'>
             <Navbar />
           </div>
           <Routes>
@@ -49,7 +50,8 @@ const App = () => {
             <Route path="/projects/:id" element={<ProjectsD />} />
             <Route path="/tasks/:id" element={<TaskD />} />
             <Route path="/tasks" element={<TaskM />} />
-          </Routes>
+          </Routes> 
+          <Footer />
       </Router>
     </div>
     </ThemeProvider>

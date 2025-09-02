@@ -42,7 +42,7 @@ const Navbar = () => {
               <button
                 onClick={() => setTheme("dark")}
                 className={`px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 text-left ${
-                  theme === "dark" ? "bg-gray-200 dark:bg-gray-600 font-semibold" : ""
+                  theme === "dark" ? "bg-pink-200 dark:bg-gray-600 font-semibold" : ""
                 }`}
               >
                 🌙 Dark
@@ -50,7 +50,7 @@ const Navbar = () => {
               <button
                 onClick={() => setTheme("light")}
                 className={`px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 text-left ${
-                  theme === "light" ? "bg-gray-300 dark:bg-gray-600 font-semibold" : ""
+                  theme === "light" ? "bg-pink-200 dark:bg-gray-600 font-semibold" : ""
                 }`}
               >
                 ☀️ Light
@@ -58,7 +58,7 @@ const Navbar = () => {
               <button
                 onClick={() => setTheme("system")}
                 className={`px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 text-left ${
-                  theme === "system" ? "bg-gray-300 dark:bg-gray-600 font-semibold" : ""
+                  theme === "system" ? "bg-pink-200 dark:bg-gray-600 font-semibold" : ""
                 }`}
               >
                 💻 System
