@@ -21,6 +21,7 @@ const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-6 font-medium">
           <Link to="/" className="hover:text-pink-300 transition">Home</Link>
+          <Link to="/portfolio" className="hover:text-pink-300 transition border px-3 py-1 flex items-center rounded-full justify-center border-green-600 pb-2 bg-green-100 text-green-900">portfolio</Link>
           <Link to="/projects" className="hover:text-pink-300 transition">Projects</Link>
           <Link to="/reports" className="hover:text-pink-300 transition">Reports</Link>
           <Link to="/teams" className="hover:text-pink-300 transition">Teams</Link>

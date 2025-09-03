@@ -17,6 +17,7 @@ import ProjectsD from './Pages/ProjectD'
 import TaskD from './Pages/TaskD'
 import TaskM from './Pages/TaskM';
 import Footer from './Components/Footer';
+import Portfolio from './Pages/Portfolio';
 
 
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
             <Route path="/projects/:id" element={<ProjectsD />} />
             <Route path="/tasks/:id" element={<TaskD />} />
             <Route path="/tasks" element={<TaskM />} />
+            <Route path="/portfolio" element={<Portfolio />} />
           </Routes> 
           <Footer />
       </Router>
